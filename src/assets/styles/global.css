@@ -1,0 +1,12 @@
+.genericComponent {
+  border: 1px solid #000;
+  padding: 20px;
+}
+
+.genericComponent--nested {
+  margin-top: 20px;
+}
+
+.genericComponent_title {
+  margin-bottom: 10px;
+}
