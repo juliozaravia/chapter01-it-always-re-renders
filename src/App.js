@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { ComponentA } from "./components/ComponentA";
 
-function App() {
+import "./App.css";
+
+const App = () => {
+  const [count, setCount] = useState(0);
+
+  const handleCount = () => {
+    setCount((oldCount) => oldCount + 1);
+  };
+
+  console.log(`*** App [${count}]: Rerender ***`);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="app_title">App count: {count}</div>
+      <button
+        className="app_button"
+        name="btn-count"
+        onClick={handleCount}
+        type="button"
+      >
+        Update state
+      </button>
+      <ComponentA />
     </div>
   );
-}
+};
 
 export default App;
