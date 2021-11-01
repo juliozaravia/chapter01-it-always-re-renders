@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 
 import "../../assets/styles/global.css";
 
-export const ComponentC = () => {
+const ComponentC = () => {
   const [, setCount] = useState(0);
 
   const handleCount = () => {
@@ -25,3 +25,5 @@ export const ComponentC = () => {
     </div>
   );
 };
+
+export const MemoComponentC = memo(ComponentC);
