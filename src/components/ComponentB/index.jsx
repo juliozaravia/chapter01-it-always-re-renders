@@ -1,1 +1,1 @@
-export { ComponentB } from "./ComponentB";
+export { MemoComponentB } from "./ComponentB";

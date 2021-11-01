@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ComponentB } from "../ComponentB";
+import { MemoComponentB } from "../ComponentB";
 
 import "../../assets/styles/global.css";
 
@@ -23,7 +23,7 @@ export const ComponentA = () => {
       >
         Update state
       </button>
-      <ComponentB />
+      <MemoComponentB />
     </div>
   );
 };
