@@ -1,9 +1,9 @@
-import { memo, useState } from "react";
+import { useState } from "react";
 import { ComponentB } from "../ComponentB";
 
 import "../../assets/styles/global.css";
 
-const ComponentA = () => {
+export const ComponentA = () => {
   const [, setCount] = useState(0);
 
   const handleCount = () => {
@@ -14,9 +14,7 @@ const ComponentA = () => {
 
   return (
     <div className="genericComponent genericComponent--nested">
-      <div className="genericComponent_title genericComponent_title--memo">
-        memo(<span>Component A</span>)
-      </div>
+      <div className="genericComponent_title">Component A</div>
       <button
         className="app_button"
         name="btn-count"
@@ -29,5 +27,3 @@ const ComponentA = () => {
     </div>
   );
 };
-
-export const MemoComponentA = memo(ComponentA);

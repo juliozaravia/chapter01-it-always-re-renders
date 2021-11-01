@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MemoComponentA } from "./components/ComponentA";
+import { ComponentA } from "./components/ComponentA";
 
 import "./App.css";
 
@@ -23,7 +23,7 @@ const App = () => {
       >
         Update state
       </button>
-      <MemoComponentA />
+      <ComponentA />
     </div>
   );
 };
