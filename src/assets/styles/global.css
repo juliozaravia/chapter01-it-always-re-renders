@@ -10,3 +10,13 @@
 .genericComponent_title {
   margin-bottom: 10px;
 }
+
+.genericComponent_title--memo {
+  color: #00a800;
+  font-weight: bold;
+}
+
+.genericComponent_title--memo span {
+  color: #000;
+  font-weight: normal;
+}
