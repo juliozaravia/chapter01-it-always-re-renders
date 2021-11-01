@@ -12,7 +12,7 @@ export const ComponentE = () => {
   console.log("Component E: Rerender");
 
   return (
-    <div className="genericComponent genericComponent--nested">
+    <div className="genericComponent genericComponent--nested genericComponent--container">
       <div className="genericComponent_title">Component E</div>
       <button
         className="app_button"

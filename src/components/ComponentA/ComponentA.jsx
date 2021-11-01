@@ -24,8 +24,10 @@ export const ComponentA = () => {
       >
         Update state
       </button>
-      <MemoComponentB />
-      <ComponentE />
+      <div className="genericComponent--parent">
+        <MemoComponentB />
+        <ComponentE />
+      </div>
     </div>
   );
 };

@@ -13,7 +13,7 @@ const ComponentB = () => {
   console.log("Component B: Rerender");
 
   return (
-    <div className="genericComponent genericComponent--nested">
+    <div className="genericComponent genericComponent--nested genericComponent--container">
       <div className="genericComponent_title genericComponent_title--memo">
         memo(<span>Component B</span>)
       </div>
