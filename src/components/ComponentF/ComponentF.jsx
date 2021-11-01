@@ -1,20 +1,19 @@
 import { useState } from "react";
-import { ComponentF } from "../ComponentF";
 
 import "../../assets/styles/global.css";
 
-export const ComponentE = () => {
+export const ComponentF = () => {
   const [, setCount] = useState(0);
 
   const handleCount = () => {
     setCount((oldCount) => oldCount + 1);
   };
 
-  console.log("Component E: Rerender");
+  console.log("Component F: Rerender");
 
   return (
-    <div className="genericComponent genericComponent--nested genericComponent--container">
-      <div className="genericComponent_title">Component E</div>
+    <div className="genericComponent genericComponent--nested">
+      <div className="genericComponent_title">Component F</div>
       <button
         className="app_button"
         name="btn-count"
@@ -23,7 +22,6 @@ export const ComponentE = () => {
       >
         Update state
       </button>
-      <ComponentF />
     </div>
   );
 };
