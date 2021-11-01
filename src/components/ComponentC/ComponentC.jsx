@@ -13,7 +13,9 @@ const ComponentC = () => {
 
   return (
     <div className="genericComponent genericComponent--nested">
-      <div className="genericComponent_title">Component C</div>
+      <div className="genericComponent_title genericComponent_title--memo">
+        memo(<span>Component C</span>)
+      </div>
       <button
         className="app_button"
         name="btn-count"
