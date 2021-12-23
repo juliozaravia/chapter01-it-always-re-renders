@@ -1,0 +1,21 @@
+.notification {
+  align-items: center;
+  color: red;
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: bold;
+  height: 20px;
+  text-transform: uppercase;
+}
+
+.notification--hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.notification--show {
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
