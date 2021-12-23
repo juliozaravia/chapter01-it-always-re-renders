@@ -1,8 +1,40 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .app {
-  border: 1px solid #000;
-  padding: 20px;
+  border: 2px solid #888;
+  padding: 5px 20px 20px;
+  width: 70%;
 }
 
 .app_title {
+  font-weight: bold;
   margin-bottom: 10px;
+}
+
+.app_counter {
+  display: flex;
+  flex-direction: row;
+  border: 1px dashed green;
+  margin: 15px 0 20px;
+}
+
+.app_info--label {
+  background-color: lightgreen;
+  color: green;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.app_info--counter {
+  padding: 5px;
+}
+
+.app_info--counter span {
+  color: green;
 }

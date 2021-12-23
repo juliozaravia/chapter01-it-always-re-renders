@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ComponentC } from "../ComponentC";
+import { Notification } from "../Notification";
 
 import "../../assets/styles/global.css";
 
@@ -14,6 +15,7 @@ export const ComponentB = () => {
 
   return (
     <div className="genericComponent genericComponent--nested">
+      <Notification />
       <div className="genericComponent_title">Component B</div>
       <button
         className="app_button"
