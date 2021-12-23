@@ -1,6 +1,6 @@
 .genericComponent {
-  border: 1px solid #000;
-  padding: 20px;
+  border: 2px solid #888;
+  padding: 5px 20px 20px;
 }
 
 .genericComponent--nested {
@@ -8,5 +8,6 @@
 }
 
 .genericComponent_title {
+  font-weight: bold;
   margin-bottom: 10px;
 }
